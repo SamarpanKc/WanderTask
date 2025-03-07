@@ -1,0 +1,21 @@
+{
+  // Extends the base TypeScript configuration for Expo projects
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    // Enable strict type checking options
+    "strict": true,
+    // Define path aliases for cleaner imports
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  // Specify the files to be included in the compilation
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}
